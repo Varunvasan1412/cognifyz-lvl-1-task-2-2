@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeting Popup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="pop-up">
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Greetings!!!</h2>
+    <p id="greetingText"></p>
+    <p id="currentTime"></p>
+  </div>
+</div>
+</section>
+
+<section class="calculator">
+    <h2 style="color: black;">CALCULATOR</h2>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+          <button onclick="clearResult()">C</button>
+          <button onclick="appendToResult('7')">7</button>
+          <button onclick="appendToResult('8')">8</button>
+          <button onclick="appendToResult('9')">9</button>
+          <button onclick="appendToResult('+')">+</button>
+          <button onclick="appendToResult('4')">4</button>
+          <button onclick="appendToResult('5')">5</button>
+          <button onclick="appendToResult('6')">6</button>
+          <button onclick="appendToResult('-')">-</button>
+          <button onclick="appendToResult('1')">1</button>
+          <button onclick="appendToResult('2')">2</button>
+          <button onclick="appendToResult('3')">3</button>
+          <button onclick="appendToResult('*')">*</button>
+          <button onclick="appendToResult('/')">/</button>
+          <button onclick="appendToResult('0')">0</button>
+          <button onclick="appendToResult('.')">.</button>
+          <button onclick="calculateResult()">=</button>
+        </div>
+      </div>
+</section>
+
+</body>
+<script src="main.js"></script>
+</html>
